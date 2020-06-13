@@ -2,7 +2,37 @@ h1, form {
   font-family: 'Shadows Into Light', cursive;
 }
 
-li {
+h1 {
+  display:flex;
+  justify-content: center;
+}
+
+
+.saved-for-later-item {
+  display:flex;
+  /* background-image: url('../public/images/unnamed.png'); */
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: double;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
   display: list-item;
   list-style: none;
+}
+
+#saved-for-later {
+  display:flex;
+  justify-content: center;
+}
+
+#new-item-form {
+  display:flex;
+  justify-content: space-between;
+}
+
+.delete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }

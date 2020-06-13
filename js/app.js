@@ -25,7 +25,7 @@ const createSavedListItem = function(form){
   //create list item
   const savedListItem = document.createElement('li');
 //add to saved list
-  savedListItem.classList.add('saved-for-later');
+  savedListItem.classList.add('saved-for-later-item');
 
   const title = document.createElement('h2');
   title.textContent = form.title.value;
@@ -34,6 +34,11 @@ const createSavedListItem = function(form){
   const link = document.createElement('h3');
   link.textContent = form.link.value;
   savedListItem.appendChild(link);
+
+  // function makeLink(){
+  //   var li = document.getElementByTagName('h3');
+  //   li.innerHTML = '<a href="form.link.value">Link</a>';
+  // }
 
   const category = document.createElement('p');
   category.textContent = form.category.value;
