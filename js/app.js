@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   const newItemForm = document.querySelector('#new-item-form')
   newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
-  const button = document.querySelector('#delete')
+  const button = document.querySelector('.delete');
   button.addEventListener('click', deleteAllSavedData);
 })
 
@@ -40,5 +40,11 @@ const createSavedListItem = function(form){
   savedListItem.appendChild(category);
 
   return savedListItem;
+}
 
+const deleteAllSavedData = function(event){
+  const deleteAll = document.getElementById('saved-for-later')
+  while (deleteAll.hasChildNodes()){
+    deleteAll.removeChild(deleteAll.firstChild);
+  }
 }
