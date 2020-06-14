@@ -35,11 +35,6 @@ const createSavedListItem = function(form){
   link.textContent = form.link.value;
   savedListItem.appendChild(link);
 
-  // function makeLink(){
-  //   var li = document.getElementByTagName('h3');
-  //   li.innerHTML = '<a href="form.link.value">Link</a>';
-  // }
-
   const category = document.createElement('p');
   category.textContent = form.category.value;
   savedListItem.appendChild(category);

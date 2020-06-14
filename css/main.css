@@ -10,6 +10,7 @@ h1 {
 
 .saved-for-later-item {
   display:flex;
+  font-family: 'Montserrat', sans-serif; 
   /* background-image: url('../public/images/unnamed.png'); */
   flex-direction: row;
   flex-wrap: wrap;
